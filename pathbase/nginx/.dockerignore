@@ -1,0 +1,9 @@
+bin/
+obj/
+**/*.user
+**/*.suo
+*.ps1
+*.cmd
+*.bat
+Dockerfile
+.dockerignore
