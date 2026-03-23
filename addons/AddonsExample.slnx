@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AddonsExampleApp/AddonsExampleApp.csproj" />
+  <Project Path="MyAddonLibrary/MyAddonLibrary.csproj" />
+</Solution>

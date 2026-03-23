@@ -1,0 +1,19 @@
+@using BlazingStory.Addons
+@using BlazingStory.ToolKit.Buttons
+@using BlazingStory.ToolKit.Icons
+
+<IconButton Icon="SvgIconType.Grid"
+            Title="Toggle grid"
+            Active="@_on"
+            OnClick="OnClick" />
+
+@code {
+    [CascadingParameter] public GlobalArguments Globals { get; set; } = default!;
+    private bool _on;
+
+    private void OnClick()
+    {
+        _on = !_on;
+        Globals["myGrid.enabled"] = _on;
+    }
+}

@@ -1,0 +1,13 @@
+@using BlazingStory.ToolKit.Styles
+
+<ImportStyleSheet Href="./_content/MyAddonLibrary/css/grid-overlay.css"
+                  Disabled="@(!_on)" />
+
+@code {
+    [CascadingParameter(Name = "Globals")]
+    public IReadOnlyDictionary<string, string>? Globals { get; set; }
+
+    private bool _on =>
+        Globals?.TryGetValue("myGrid.enabled", out var v) == true
+        && v == "True";
+}
