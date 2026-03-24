@@ -1,0 +1,5 @@
+@using MyAddonLibrary
+
+<BlazingStoryApp Assemblies="[typeof(App).Assembly]"
+                 OnInitialize="b => b.Addons.Register<MyGridAddon>()">
+</BlazingStoryApp>
